@@ -1,0 +1,101 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "next/core-web-vitals",
+    "plugin:react-redux/recommended",
+    "next/core-web-vitals",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended"
+    //   "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "jest", "react-redux"],
+  "rules": {
+    "dot-notation": "error",
+    "no-else-return": "error",
+    "no-floating-decimal": "error",
+    "no-sequences": "error",
+    "array-bracket-spacing": "error",
+    "computed-property-spacing": ["error", "never"],
+    "curly": "error",
+    "no-lonely-if": "error",
+    "no-unneeded-ternary": "error",
+    "one-var-declaration-per-line": "warn",
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true,
+        "avoidEscape": true
+      }
+    ],
+    "array-callback-return": "off",
+    "prefer-const": "error",
+    "import/prefer-default-export": "off",
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true
+      }
+    ],
+    "no-unused-expressions": "off",
+    "no-prototype-builtins": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/href-no-hash": [0],
+    "react/display-name": 0,
+    "react/no-deprecated": "error",
+    "react/no-unsafe": [
+      "error",
+      {
+        "checkAliases": true
+      }
+    ],
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "ignoreCase": true
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": 0,
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "warn",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "warn",
+    "react-redux/connect-prefer-named-arguments": 2
+    //   "jest/expect-expect": "error",
+    //   "jest/no-test-callback": "error",
+    //   "jest/valid-describe-callback": "error",
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "jest": {
+      "version": 27,
+      "globalAliases": {
+        "describe": ["context"],
+        "fdescribe": ["fcontext"],
+        "xdescribe": ["xcontext"]
+      }
+    }
+  }
+}

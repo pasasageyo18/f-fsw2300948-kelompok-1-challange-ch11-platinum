@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Users List should be the same component 1`] = `
+<div
+  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+  data-testid="user-list"
+/>
+`;
